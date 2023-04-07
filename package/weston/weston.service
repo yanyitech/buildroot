@@ -1,0 +1,19 @@
+[Unit]
+Description=weston desktop
+Before=graphical.target
+After=remote-fs.target
+
+[Service]
+Type=forking
+Restart=no
+TimeoutSec=5s
+IgnoreSIGPIPE=no
+KillMode=process
+GuessMainPID=no
+RemainAfterExit=yes
+ExecStart=/etc/init.d/weston start
+ExecStop=/etc/init.d/weston stop
+
+[Install]
+WantedBy=multi-user.target
+
