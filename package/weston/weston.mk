@@ -206,4 +206,6 @@ define WESTON_INSTALL_INIT_SYSV
 		$(TARGET_DIR)/etc/init.d/S49weston
 endef
 
+WESTON_POST_INSTALL_TARGET_HOOKS += WESTON_INSTALL_INIT_SYSV
+
 $(eval $(meson-package))
