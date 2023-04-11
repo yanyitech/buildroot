@@ -1,17 +1,10 @@
-Buildroot for Rockchip Cool Pi 4B & CM5 Board
+Rockchip Cool pi board
+---------------------
 
-Forum:
-https://www.cool-pi.com
+To build a minimal weston support for this board:
 
-Wiki:
-https://wiki.cool-pi.com
-
-Example compile:
-
-make coolpi4_defconfig
-
-make -j 8
-
+$ make coolpi4_defconfig
+$ make -j 8
 
 Buildroot prepares a bootable "coolpi-sdcard.img" image in the output/images/
 directory, ready to be flashed into the SD card:
